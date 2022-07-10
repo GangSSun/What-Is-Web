@@ -1,0 +1,129 @@
+
+
+<!DOCTYPE html>
+<html>
+<title>What Is Web?</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="mcss.css">
+<link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/jejugothic.css?family=JejuGothic">
+<link href="https://fonts.googleapis.com/css?family=Jua:400" rel="stylesheet">
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "JejuGothic", sans-serif}
+
+@font-face{
+  font-family: 'Jua';
+  src:url(Jua-Regular.eot);
+  src:url(Jua-Regular.eot?#iefix) format('embedded-opentype'),
+  url(Jua-Regular.woff) format('woff'),
+  url(Jua-Regular.ttf) format('truetype');
+src:local(※), url(Jua-Regular.woff) format('woff'); }
+.fontj {font-family:"Jua", sans-serif;}
+
+.m-bar-block .m-bar-item {padding:20px}
+.navcenter{
+  margin: auto;
+  padding: 0;
+  background-color:none;
+  position:absolute;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+.navmenu{
+  padding : 0px 10px 0px 10px;
+  font-size : 15px;
+  text-decoration : none;
+  text-align : center;
+  border-right : 1px solid rgb(180,180,180);
+}
+.navmenu:hover{
+  background-color: none;
+  font-weight: bold;
+}
+.active{
+  font-weight: bold;
+}
+.last{
+  border-right : none;
+}
+
+</style>
+<body>
+
+  <!-- Top menu -->
+  <!-- 제목 -->
+  <div class="m-top m-white">
+    <h1 class="m-large m-display-topright fontj" style="text-align:right; margin:0px 20px 0px 0px; color:rgba(89,89,89,1)"><b>CSE<br>Kang_Sun</b></h1>
+    <br>
+    <br>
+    <div>
+      <div class="m-large navcenter fontj">
+        <a href="WEB.html" class="navmenu m-xslarge">Web?</a>
+        <a href="HTML.html" class="navmenu m-xslarge">HTML!</a>
+        <a href="CSS.html" class="navmenu m-xslarge">CSS?</a>
+        <a href="JAVA_SCRIPT.html" class="navmenu m-xslarge">JAVA SCRIPT!</a>
+        <a href="JSP.html" class="navmenu last m-xslarge">JSP?</a>
+      </div>
+    </div>
+    <br>
+    <br>
+  </div>
+
+  <!-- 로고 -->
+  <div class="m-top">
+    <div class="m-xlarge" style="position:fixed; top:-20px; left:200px; max-width:1200px;margin:auto">
+      <a href="main.html" class="m-padding-16 m-left" onclick="function1()">
+      <img src="Image/Logo/logo_no.png" alt="logo" style="width:250px;height:200px;border:0"></a> <!--로고-->
+    </div>
+  </div>
+
+  
+
+<!-- !PAGE CONTENT! -->
+<div class="m-main m-content m-center m-padding" style="max-width:1100px;margin-top:100px">
+  
+  <br>
+  <br>
+  <br>
+  <br>
+  <div>
+    <div class="navcenter">
+      <a href="WEB.html" class="navmenu ">Web이란?</a>
+      <a href="WEB_2.html" class="navmenu active">Web의 동작구조</a>
+      <a href="WEB_3.html" class="navmenu">Web Programming의 구조</a>
+      <a href="WEB_4.html" class="navmenu">백 엔드 중심 개발이란?</a>
+      <a href="WEB_5.html" class="navmenu last">프론트 엔드 중심 개발이란?</a>
+    </div>
+  </div>
+  <hr>
+  <!-- First Photo Grid-->
+  <div class="m-row-padding m-padding-16 m-left-align " >
+    <pre><h3 class="fontj">
+      HTML로 만들어진 콘텐치는 웹 서버라고 하는 별도의 서버 S/W를 통해 서비스로 제공되며
+      웹 서버 S/W로는 아파치가 대표적이다.
+
+      또한 웹 서비스를 요청한 클라이언트에서 서비스를 이용하려면 웹 브라우저 라고 하는 클라이언트가 필요한데,
+      우리가 자주 사용하는 MS 엣지, 구글 크롬, 사파리 등이 이에 해당한다.
+      
+      일반적인 HTML을 중심으로 한 웹의 동작 과정은 다음과 같다.
+      1. 웹 브라우저에서 도메인(URL)을 입력한다.
+      2. DNS 서버는 해당 도메인을 가진 IP 주소를 웹 브라우저에 제공한다.
+      3. 웹 브라우저는 IP주소의 해당 서버 80번 포트로 접속을 시도하고, 도메인의 웹서버는 접속을 대가하다 요청이 들어오면 수락한다.
+      4. 웹 서버는 요청 내용을 분석하고 요청된 html파일을 디스크에서 읽는다.
+      5. 웹 서버는 파일 내용을 텍스트 그대로 요청한 클라이언트에 전송한다.
+      6. 웹 브라우저는 웹 서버로부터 받은 텍스트 내용 중 HTML 태그를 분석하고 적절히 변환하여 화면을 구성한다.
+    </h3></pre>
+    <br>
+    <img src="Image/picture/web_2_image.png" style="width:1100px;height:250px;border:0">
+
+  </div>
+  <hr>
+  
+</div>
+
+
+
+
+</body>
+</html>

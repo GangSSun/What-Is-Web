@@ -1,0 +1,429 @@
+
+
+<!DOCTYPE html>
+<html>
+<title>What Is Web?</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="mcss.css">
+<link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/jejugothic.css?family=JejuGothic">
+<link href="https://fonts.googleapis.com/css?family=Jua:400" rel="stylesheet">
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "JejuGothic", sans-serif}
+
+@font-face{
+  font-family: 'Jua';
+  src:url(Jua-Regular.eot);
+  src:url(Jua-Regular.eot?#iefix) format('embedded-opentype'),
+  url(Jua-Regular.woff) format('woff'),
+  url(Jua-Regular.ttf) format('truetype');
+src:local(※), url(Jua-Regular.woff) format('woff'); }
+.fontj {font-family:"Jua", sans-serif;}
+
+.m-bar-block .m-bar-item {padding:20px}
+.navcenter{
+  margin: auto;
+  padding: 0;
+  background-color:none;
+  position:absolute;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+.navmenu{
+  padding : 0px 10px 0px 10px;
+  font-size : 15px;
+  text-decoration : none;
+  text-align : center;
+  border-right : 1px solid rgb(180,180,180);
+}
+.navmenu:hover{
+  background-color: none;
+  font-weight: bold;
+}
+.active{
+  font-weight: bold;
+}
+.last{
+  border-right : none;
+}
+
+</style>
+<body>
+
+  <!-- Top menu -->
+  <!-- 제목 -->
+  <div class="m-top m-white">
+    <h1 class="m-large m-display-topright fontj" style="text-align:right; margin:0px 20px 0px 0px; color:rgba(89,89,89,1)"><b>CSE<br>Kang_Sun</b></h1>
+    <br>
+    <br>
+    <div>
+      <div class="m-large navcenter fontj">
+        <a href="WEB.html" class="navmenu m-xslarge">Web?</a>
+        <a href="HTML.html" class="navmenu m-xslarge">HTML!</a>
+        <a href="CSS.html" class="navmenu m-xslarge">CSS?</a>
+        <a href="JAVA_SCRIPT.html" class="navmenu m-xslarge">JAVA SCRIPT!</a>
+        <a href="JSP.html" class="navmenu last m-xslarge">JSP?</a>
+      </div>
+    </div>
+    <br>
+    <br>
+  </div>
+
+  <!-- 로고 -->
+  <div class="m-top">
+    <div class="m-xlarge" style="position:fixed; top:-20px; left:200px; max-width:1200px;margin:auto">
+      <a href="main.html" class="m-padding-16 m-left" onclick="function1()">
+      <img src="Image/Logo/logo_no.png" alt="logo" style="width:250px;height:200px;border:0"></a> <!--로고-->
+    </div>
+  </div>
+
+  
+
+  <!-- !PAGE CONTENT! -->
+  <div class="m-main m-content m-center m-padding" style="max-width:1100px;margin-top:100px">
+    <div class="m-row-padding m-padding-16 m-left-align " >
+    <pre><h3 class="fontj">
+    1. 스타일 시트
+      ① 스타일시트를 사용하는 이유
+        글자의 크기 조절
+        자간과 행간을 원하는 대로 조절
+        특정 텍스트에만 배경색 설정
+        하이퍼텍스트 링크의 색상과 모양 설정
+        문단에 여백과 테두리 설정
+        문단의 배경색과 배경이미지 다양하게 설정
+        페이지를 좀더 빠르고 작게 구성
+        웹페이지의 구조를 본문의 내용과 분리 가능
+        많은 문서를 한꺼번에 수정하고 관리
+        브라우저의 플랫폼과 무관하게 적용
+          
+      ② 스타일시트
+        &lt;html&gt;
+        &lt;head&gt;
+        &lt;title&gt;스타일시트&lt;/title&gt;
+        &lt;style type="text/css"&gt;
+        body {font-size:10pt; margin-left:5%; margin-right:5%; background-color:beige;}
+        h3 {color:orange; font-size:15pt; font-weight:bold; text-align:center;}
+        p {font-size:15pt; font-weight:bold; border:solid green; border-width:2pt;}
+        &lt;/style&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+        &lt;h3&gt;태산이 높다하되&lt;/h3&gt;
+        태산이 높다 하되 하늘 아래 뫼이로다&lt;br&gt;
+        오르고 또 오르면 못 오를 리 없건마는&lt;br&gt;
+        사람이 제 아니 오르고 뫼만 높다 하더라&lt;br&gt;
+        &lt;p&gt;
+        양사언&lt;br&gt;
+        &lt;p&gt;
+        조선시대
+        &lt;/body&gt;
+        &lt;/html&gt;
+        HTML 적용 시
+        <img src="Image/picture/Style_1.PNG">
+        기본 구조 : 선택자{속성 : 스타일값;}
+        선택자
+        스타일 정보를 할당할 대상, 선언부에서 지정하는 내용이 선택자에 영향을 미친다. 선언부에서 지정하는 스타일의 내용과 HTML문서를 연결
+        모든 HTML 요소들을 선택자로 사용가능
+        선택자가 태그라면 해당 태그의 영향을 받는 모든 요소에 해당 스타일 적용
+        위치 : 문서의 헤더에 삽입
+        필요한 태그(style, /style) : 해당 페이지에 적용할 스타일 모아 헤더 부분에 삽입
+        스타일 구문 : style 태그안에 어떤 구문으로 스타일 정의하는지 지정
+
+      ③ 클래스 스타일 : 헤더에 정의
+        &lt;html&gt;
+        &lt;head&gt;
+        &lt;title&gt; 클래스 스타일 &lt;/title&gt;
+        &lt;style type="text/css"&gt;
+        body {letter-spacing:1pt; line-height:160%; margin-left:5%; margin-right:5%;
+        background-color:beige;}
+        h1{color:green;font-style:italic;text-align:center;}
+        h2,h3,h4 {font-size:15pt; font-weight:bold; text-align:center;}
+        p {font-size:10pt;}
+        p.a {color:blue}
+        p.b {color:green}
+        p.c {color:orange}
+        p.d {font-size:15pt; font-weight:bold;}
+        &lt;/style&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+        &lt;h3&gt;태산이 높다하되&lt;/h3&gt;
+        &lt;p class="a"&gt;태산이 높다 하되 하늘 아래 뫼이로다&lt;/p&gt;
+        &lt;p class="b"&gt;오르고 또 오르면 못 오를 리 없건마는&lt;/p&gt;
+        &lt;p class="c"&gt;사람이 제 아니 오르고 뫼만 높다 하더라&lt;/p&gt;
+        &lt;p class="d"&gt;양사언&lt;/p&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+        HTML 적용 시
+        <img src="Image/picture/Style_2.PNG">
+        class 속성 사용하면 기존에 정의되어 있는 스타일 무시
+        스타일 시트에서 해당 태그의 스타일 정의하기 위해 태그이름 뒤에 .을 찍고 클래스 이름 명시
+        클래스는 해당 상위 요소로부터 속성값 상속 받는다. p.a : p태그에만 사용, 텍스트를 파란색으로 지정
+        p.b : p태그에만 사용, 텍스트를 녹색으로 지정
+        p.c : p태그에만 사용, 텍스트를 오렌지색으로 지정
+        p.d : p태그에만 사용, 텍스트를 15pt 볼드체로 지정
+
+      ④ 클래스 스타일 : 문서에 해단 태그에 정의
+        &lt;body style="font-size:11pt"&gt;
+        &lt;h2 style="font-style:italic"&gt;태산이 높다하되&lt;/h2&gt;
+        &lt;p style="color:green"&gt;태산이 높다 하되 하늘 아래 뫼이로다&lt;/p&gt;
+        &lt;p style="color:blue"&gt;오르고 또 오르면 못 오를 리 없건마는&lt;/p&gt;
+        &lt;p style="color:red;font-weight:bold"&gt;사람이 제 아니 오르고 뫼만 높다 하더라&lt;/p&gt;
+        &lt;/body&gt;
+        HTML 적용 시
+        <img src="Image/picture/Style_3.PNG">  
+      ⑤ 클래스 스타일 : 외부 파일로 지정
+        myStyle.css
+        body {letter-spacing:1pt; line-height:160%; margin-left:5%; margin-right:5%;
+        background-color:beige;}
+        h1{color:green;font-style:italic;text-align:center;}
+        h2,h3,h4 {font-size:15pt; font-weight:bold; text-align:center;}
+        p {font-size:10pt;}
+        p.a {color:blue}
+        p.b {color:green}
+        p.c {color:orange}
+        p.d {font-size:15pt; font-weight:bold;}
+        main.html
+        &lt;html&gt;
+        &lt;head&gt;
+        &lt;title&gt;외부 스타일 시트&lt;/title&gt;
+        &lt;link rel="stylesheet" type="text/css" href="myStyle.css"&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+        &lt;h3&gt;태산이 높다하되&lt;/h3&gt;
+        &lt;p class="a"&gt;태산이 높다 하되 하늘 아래 뫼이로다&lt;/p&gt;
+        &lt;p class="b"&gt;오르고 또 오르면 못 오를 리 없건마는&lt;/p&gt;
+        &lt;p class="c"&gt;사람이 제 아니 오르고 뫼만 높다 하더라&lt;/p&gt;
+        &lt;p class="d"&gt;양사언&lt;/p&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+        HTML 적용 시
+        <img src="Image/picture/Style_4.PNG">
+        외부 스타일 사용하는 이유
+        다양한 문서들에 동일한 스타일 시트 적용시
+        한 사이트 내에서 전체적인 스타일을 일관성 있게 적용시
+        간단한 수정 작업으로 다수 페이지 수정시
+        예) link rel="stylesheet" type="text/css" herf="주소"
+        rel="stylesheet" : limk 태그로 연결할 화일과 현재 화일의 관계 지정
+        type="text/css" : link 태그로 연결할 화일의 형식 지정
+        herf="주소" : link 태그로 연결할 스타일 시트 화일의 위치 지정
+
+      ⑥ &lt;div&gt;&lt;/div&gt; &lt;span&gt;&lt;/span&gt;
+        &lt;!DOCTYPE HTML&gt;
+        &lt;html&gt;
+        &lt;head&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;title&gt;옹달샘&lt;/title&gt;
+        &lt;style type="text/css"&gt;
+        body {background-color: #e7e7e7; }
+        #div1 {background-color: #46FFFF; padding: 10px; }
+        #span1 {background-color: #FFE150; padding: 10px; }
+        &lt;/style&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+        &lt;div id="div1" align="right";&gt;
+        깊은 산골 옹달샘 누가 와서 먹나요
+        깊은 산골 옹달샘 누가 와서 먹나요
+        새벽에 토끼가 눈 비비고 일어나
+        세수하러 왔다가 물만 먹고 가지요
+        &lt;/div&gt;&lt;br/&gt;
+        &lt;span id="span1"&gt;
+        깊은 산골 옹달샘 누가 와서 먹나요
+        깊은 산골 옹달샘 누가 와서 먹나요
+        새벽에 토끼가 눈 비비고 일어나
+        세수하러 왔다가 물만 먹고 가지요
+        &lt;/span&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+        HTML 적용 시
+        <img src="Image/picture/Style_5.PNG">
+        
+        &lt;div&gt;는 박스 형태로 영역이 설정되고 그 안에 정렬, width, height, align
+        &lt;span&gt;은 줄 단위로 영역이 설정, inline 속성으로 width, height, align 설정불가
+        &lt;!DOCTYPE HTML&gt;
+        &lt;html&gt;
+        &lt;head&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;title&gt;CSS 속성&lt;/title&gt;
+        &lt;style type="text/css"&gt;
+        body { background-color: #e7e7e7; }
+        div { width: 300px; height: 20px; border: 1px solid; padding: 5px; margin: 10px; }
+        #div1 {background-color: #32AAFF;}
+        #div2 {background-color: #FF32B1;}
+        span { width: 300px; height: 20px; border: 1px solid; padding: 5px; margin: 10px; }
+        #span1 {background-color: #32AAFF; padding: 5px;}
+        #span2 {background-color: #FF32B1;}
+        &lt;/style&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+        &lt;div id="div1"&gt;깊은 산골 옹달샘&lt;/div&gt;
+        &lt;div id="div2"&gt;누가 와서 먹나요&lt;/div&gt;
+        &lt;span id="span1"&gt;깊은 산골 옹달샘&lt;/span&gt;
+        &lt;span id="span2"&gt;누가 와서 먹나요&lt;/span&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+        HTML 적용 시
+        <img src="Image/picture/Style_6.PNG">
+        &lt;div&gt;는 줄바꿈이 적용되어 아래로 정렬
+        &lt;span&gt;은 옆으로 정렬
+        
+    2. 스타일 시트 속성
+      ① 글꼴 지정 : font_family
+        &lt;style type="text/css"&gt;
+        h1{font-family:serif,sans-serif,"Comic Sans MS",'CG Times"}
+        &lt;/style&gt;
+        &lt;p style="font-family:monospace"&gt;monospace font family&lt;/p&gt;
+        font_family 속성 : 글꼴의 종류 지정
+        여러개의 글꼴 사용 - 해당 글꼴이 없는 사용자에게 유용
+        순서대로 해당 글꼴이 클라이언트 컴퓨터에 존재하는지 찾는다. 
+
+      ② 글자의 모양과 크기 지정 : 모양(font_weight, font_style), 크기(font_size)
+        &lt;html&gt;
+        &lt;head&gt;
+        &lt;title&gt;글자의 크기와 모양 설정&lt;/title&gt;
+        &lt;style type="text/css"&gt;
+        body {font-size:11pt}
+        p {border:solid green; border-width:1pt; margin-left:100px; margin-right:10px}
+        &lt;/style&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+        &lt;h3&gt;글자의 크기를 설정하는 font-size 속성&lt;/h3&gt;
+        &lt;p&gt;
+        &lt;span style="font-size:12pt"&gt;글자의 크기 설정하기 (font-size:12pt)&lt;/span&gt;&lt;br&gt;
+        &lt;span style="font-style:italic"&gt;글자의 이탤릭체 표현 설정하기 (font-style:italic)&lt;/span&gt;&lt;br&gt;
+        &lt;span style="font-weight:bold"&gt;글자의 굵기 설정하기 (font-weight:bold)&lt;/span&gt;&lt;br&gt;
+        &lt;/p&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+        HTML 적용 시
+        <img src="Image/picture/Style_7.PNG">
+        font_weight 속성 - 글자의 굵기 지정
+        종류 : normal, bold, bolder, lighter
+        bolder, lighter은 기존에 지정된 글꼴 기준
+        normal, bold은 절대값으로 굵기 지정
+        font_style 속성 - 글자의 이탤릭체 지정
+        종류 : normal, italic, oblique
+        font_size 속성 - 글자의 크기 지정
+        절대 크기 키워드 : xx_small, x-small, small, medium, large, x-large, xx-large
+        상대 크기 키워드 : larger, smaller
+        길이 단위 키워드 : px(픽셀), cm, pt(포인트, 1pt=1/72인치)
+        백분율(%) 표시
+
+      ③ 글자 간격 줄 간격 지정 : letter-spacing(글자 간격), line-height(줄 간격)
+        문단 여백 지정 : margin-left(왼쪽 여백), margin-right(오른쪽 여백)
+        텍스트 위치 지정 : text-align
+        들여쓰기 지정 : text-indent 배경색과 배경이미지 지정 : background-color(배경색), background-image(배경이미
+        지)
+        &lt;html&gt;
+        &lt;head&gt;
+        &lt;title&gt; 클래스 스타일 &lt;/title&gt;
+        &lt;style type="text/css"&gt;
+        body {letter-spacing:1pt; line-height:160%; margin-left:50px; margin-right:5%;
+        background-color:beige;}
+        h3 {font-size:15pt; font-weight:bold; text-align:center; background-color:orange;}
+        p {font-size:10pt;}
+        p.a {color:blue; text-indent:20px;}
+        p.b {color:green; text-align:center;}
+        p.c {color:orange; background-image:url(sample.jpg);background-repeat:no-repeat;}
+        p.d {font-size:15pt; font-weight:bold;}
+        &lt;/style&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+        &lt;h3&gt;옹달샘&lt;/h3&gt;
+        &lt;p class="a"&gt;깊은 산골 옹달샘 누가 와서 먹나요&lt;br&gt;
+        깊은 산골 옹달샘 누가 와서 먹나요&lt;/p&gt;
+        &lt;p class="b"&gt;새벽에 토끼가 눈 비비고 일어나&lt;br&gt;
+        세수하러 왔다가 물만 먹고 가지요&lt;/p&gt;
+        &lt;p class="c"&gt;깊은 산골 옹달샘 누가 와서 먹나요&lt;br&gt;
+        깊은 산골 옹달샘 누가 와서 먹나요&lt;/p&gt;
+        &lt;p class="d"&gt;새벽에 토끼가 눈 비비고 일어나&lt;br&gt;
+        세수하러 왔다가 물만 먹고 가지요&lt;/p&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+        HTML 적용 시
+        <img src="Image/picture/Style_8.PNG">
+        letter-spacing 속성
+        h1{letter-spacing:1px}
+        p{letter-spacing:normal}
+        line-height 속성(normal, 길이단위, 백분율(%) 사용)
+        p{line-height:normal}
+        p{font-size:10pt;line-height:15pt} = p{font-size:10pt;line-height:150%}
+        text-align
+        속성 : left, right, center
+        p, h1, div에만 적용
+        p 태그 영향 받는 문단의 첫줄을 5픽셀 들여쓰기
+        p{text-indent:5px}
+        p 태그 영향 받는 문단의 첫줄을 브라우저 너비의 10%만큼 들여쓰기
+        p{text-indent:10%}
+        배경 이미지 넣기
+        background-image:url(sample.jpg);
+        배경 이미지 반복
+        background-repeat:no-repeat;
+        repeat : 배경이미지를 수평과 수직으로 반복
+        repeat-x : 배경이미지를 왼쪽에서 오른쪽으로 반복
+        repeat-y : 배경이미지를 위에서 아래로 반복
+        no-repeat : 배경이미지를 반복하지 않는다. 
+
+      ④ 이미지의 절대 위치 지정
+        &lt;html&gt;
+        &lt;head&gt;
+        &lt;title&gt;절대 위치 지정하기&lt;/title&gt;
+        &lt;style type="text/css"&gt;
+        #image1 {position:absolute; top:100px; left:150px; z-index:0}
+        #image2 {position:absolute; top:130px; left:320px; z-index:1}
+        &lt;/style&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+        &lt;div id="image1"&gt;&lt;img src="sample.jpg"&gt;&lt;/div&gt;
+        &lt;div id="image2"&gt;&lt;img src="sample.jpg"&gt;&lt;/div&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+        HTML 적용 시
+        <img src="Image/picture/Style_9.PNG">
+        # : 스타일 시트에서 ID 선택자에 대한 스타일 정의시 사용
+        position : 대상의 위치가 절대위치(absolute)인가 상대위치(relative)인가 지정
+        top, left : 왼족 상단 기준으로 객체의 위치 지정
+        z-index : 절대 위치를 가지는 객체들이 겹칠 때 속성의 값이 큰 개체가 위에 위치
+
+      ⑤ CSS의 overflow
+        요소내의 컨텐츠가 너무 커서 요소내에 모두 보여주기 힘들때 그것을 어떻게 보여줄지를 지정
+        기본적으로 컨텐츠를 포함하고 있는 요소의 크기가 고정되어 있지 않다면 컨텐츠를 모두 포함할 수 있도록
+        요소의 크기가 커짐
+        크기가 고정 되어 있다면 overflow 프로퍼티에 지정된 값에 따라 보여짐
+        visible : 넘칠 경우 컨텐츠가 상자 밖으로 보여집니다.(기본 값입니다. )
+        hidden : 넘치는 부분은 잘려서 보여지지 않습니다. scroll : 스크롤바가 추가되어 스크롤할 수 있습니다.(가로, 세로 모두 추가 됩니다.)
+        auto : 컨텐츠 량에 따라 스크롤바를 추가할지 자동으로 결정
+        
+    </h3></pre>
+  </div>
+  <hr>
+
+  </div>
+
+  <!-- Pagination -->
+  <div class="m-center m-padding-32">
+    <div class="m-bar">
+      <a href="WHAT_HTML.html" class="m-bar-item m-button m-hover-black">&laquo;</a>
+      <a href="WHAT_HTML.html" class="m-bar-item  m-button m-hover-black">1</a>
+      <a href="BASIC_TAG.html" class="m-bar-item m-button m-hover-black">2</a>
+      <a href="MEDIA_TAG.html" class="m-bar-item m-button m-hover-black">3</a>
+      <a href="TABLE_TAG.html" class="m-bar-item m-button m-hover-black">4</a>
+      <a href="FRAME_TAG.html" class="m-bar-item m-button m-hover-black">5</a>
+      <a href="STYLE_SHEET.html" class="m-bar-item m-black m-button">6</a>
+      <a href="WHAT_META.html" class="m-bar-item m-button m-hover-black">7</a>
+      <a href="WHAT_META.html" class="m-bar-item m-button m-hover-black">&raquo;</a>
+    </div>
+  </div>
+
+
+
+  <a class="m-large fontj" style="display:scroll;position:fixed;bottom:30px;right:10px;" rel="nofollow"
+  href="#" title="Back to Top" style="m-large fontj">위로↑</a>
+  <br>
+  <br>
+  <a class="m-large fontj" style="display:scroll;position:fixed;bottom:10px;right:10px;" rel="nofollow"
+  href="#scrollbottom" title="Go to Bottom" >아래↓</a>
+
+  <div id="scrollbottom"></div>
+
+</body>
+</html>

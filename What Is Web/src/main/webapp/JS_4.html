@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+ <title>자바스크립트</title>
+ <style type="text/css">
+body{width:820px;}
+ div{display:block; margin:4px; padding:4px; background-color:#EBF5FF;
+ text-align:center;}
+div.a{height:40px;}
+div.b{height:30px;}
+ div.c{float:left; width:600px; height:600px; }
+ div.d{width:584px; background-color:#78A9ED;}
+ div.e{float:left; width:188px; height:600px;}
+ div.f{overflow:hidden; height:40px;}
+div.g{float:left; width:150px; text-align:left;}
+a{text-decoration-line: none; color: inherit;}
+ </style>
+</head>
+<body>
+ <div class="a">header</div>
+ <div class="b">nav</div>
+ <div class="c">
+ section
+<div class="d">article</div><br><br>
+<table align="left" border="1" bordercolor="#78A9ED" width="300" height="200“
+ cellpadding="0" cellspacing="0">
+<caption align="top">Fig. 1. 한국인의 BMI 표</caption>
+<tr><th>BMI</th><th>상태</th></tr>
+<tr><td>35.0 이상</td><td>고도비만</td></tr>
+<tr><td>25 - 34.9</td><td>비만</td></tr>
+<tr><td>23 - 24.9</td><td>과체중</td></tr>
+<tr><td>18.5 - 22.9</td><td>정상</td></tr>
+<tr><td>18.5 미만</td><td>저체중</td></tr>
+<tr><td colspan="2"><b>BMI=체중(kg)/키(m)*키(m)</td></tr>
+</table><br><br>
+<form method="post" name="box" >
+<input type="number" name="data_kg" id="kg" placeholder="체중(kg) : ">
+<br><br>
+<input type="number" name="data_m" id="m" placeholder="키(m) : ">
+ <br><br>
+<input type="text" name="output" id="result" " placeholder="계산결과 : "
+ value=""> <br><br>
+<input type="button" value="결과"' onclick="button_click();"><br><br>
+</form>
+<script type="text/javascript" src="bmi01.js"></script>
+</div>
+<div class="e">
+aside
+<div class="g">
+<ul type="square">
+    <li><a href="JS_1.html" title="자바스크립트 if문 예제 1 입니다."> if문 1</a></li>
+    <li><a href="JS_2.html" title="자바스크립트 if문 예제 2 입니다."> if문 2</a></li>
+    <li><a href="JS_3.html" title="자바스크립트 BMI 예제 1 입니다."> BMI 계산기 1</a></li>
+    <li><a href="JS_4.html" title="자바스크립트 BMI 예제 2 입니다."> BMI 계산기 2</a></li>
+    <li><a href="JS_5.html" title="현재 위치를 화면에 나타냅니다,"> 카카오맵</a></li>
+    <li><a href="JS_7.html" title="홈으로 이동합니다.">홈으로</a></li>
+</ul>
+</div>
+</div>
+<div class="f">footer</div>
+</body>
+</html>

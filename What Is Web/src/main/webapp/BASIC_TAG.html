@@ -1,0 +1,334 @@
+
+<!DOCTYPE html>
+<html>
+<title>What Is Web?</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="mcss.css">
+<link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/jejugothic.css?family=JejuGothic">
+<link href="https://fonts.googleapis.com/css?family=Jua:400" rel="stylesheet">
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "JejuGothic", sans-serif}
+
+@font-face{
+  font-family: 'Jua';
+  src:url(Jua-Regular.eot);
+  src:url(Jua-Regular.eot?#iefix) format('embedded-opentype'),
+  url(Jua-Regular.woff) format('woff'),
+  url(Jua-Regular.ttf) format('truetype');
+src:local(※), url(Jua-Regular.woff) format('woff'); }
+.fontj {font-family:"Jua", sans-serif;}
+
+.m-bar-block .m-bar-item {padding:20px}
+.navcenter{
+  margin: auto;
+  padding: 0;
+  background-color:none;
+  position:absolute;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+.navmenu{
+  padding : 0px 10px 0px 10px;
+  font-size : 15px;
+  text-decoration : none;
+  text-align : center;
+  border-right : 1px solid rgb(180,180,180);
+}
+.navmenu:hover{
+  background-color: none;
+  font-weight: bold;
+}
+.active{
+  font-weight: bold;
+}
+.last{
+  border-right : none;
+}
+
+</style>
+<body>
+
+  <!-- Top menu -->
+  <!-- 제목 -->
+  <div class="m-top m-white">
+    <h1 class="m-large m-display-topright fontj" style="text-align:right; margin:0px 20px 0px 0px; color:rgba(89,89,89,1)"><b>CSE<br>Kang_Sun</b></h1>
+    <br>
+    <br>
+    <div>
+      <div class="m-large navcenter fontj">
+        <a href="WEB.html" class="navmenu m-xslarge">Web?</a>
+        <a href="HTML.html" class="navmenu m-xslarge">HTML!</a>
+        <a href="CSS.html" class="navmenu m-xslarge">CSS?</a>
+        <a href="JAVA_SCRIPT.html" class="navmenu m-xslarge">JAVA SCRIPT!</a>
+        <a href="JSP.html" class="navmenu last m-xslarge">JSP?</a>
+      </div>
+    </div>
+    <br>
+    <br>
+  </div>
+
+  <!-- 로고 -->
+  <div class="m-top">
+    <div class="m-xlarge" style="position:fixed; top:-20px; left:200px; max-width:1200px;margin:auto">
+      <a href="main.html" class="m-padding-16 m-left" onclick="function1()">
+      <img src="Image/Logo/logo_no.png" alt="logo" style="width:250px;height:200px;border:0"></a> <!--로고-->
+    </div>
+  </div>
+
+  
+
+<!-- !PAGE CONTENT! -->
+  <div class="m-main m-content m-center m-padding" style="max-width:1100px;margin-top:100px">
+    <div class="m-row-padding m-padding-16 m-left-align " >
+    <pre><h3 class="fontj">
+      ① 글자의 크기 설정, 글자색 설정하기, 글꼴 지정하기 &lt;font color="" face="" size=""&gt;
+        &lt;font color="blue" face="궁서체" size="5"&gt;웹프로그래밍 수업입니다.&lt;/font&gt;
+        HTML 적용 시 <pre><font color="blue" face="궁서체" size="5"> 웹프로그래밍 수업입니다.</font></pre>
+
+        &lt;font size=“1”&gt; (가장작은 사이즈) - size=“7”(가장 큰 사이즈), size=3(기본사이즈)
+        &lt;font color="blue"&gt; : 색상을 영문으로 표기
+        &lt;font color="#000000"&gt; : 색상코드이용
+        &lt;font face="궁서체"&gt;
+        &lt;font face="궁서체,샘물,엽서"&gt; : 대체글꼴 지정
+        윈도우의 기본체 : 굴림[체],돋음[체],궁서[체],바탕[체]
+        [체]가 있으면 고정폭 글꼴이고 없으면 가변폭 글꼴
+
+      ② 글자에 다양한 효과주기
+        &lt;b&gt;&lt;i&gt;굵은 이탤릭체&lt;/i&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;
+        &lt;i&gt;&lt;tt&gt;이탤릭체 타이프체&lt;/tt&gt;&lt;/i&gt;&lt;br&gt;&lt;br&gt;
+        &lt;small&gt;글자를 한 단계 작게 표시합니다&lt;/small&gt;&lt;br&gt;&lt;br&gt;
+        &lt;big&gt;글자를 한 단계 크게 표시합니다&lt;/big&gt;&lt;br&gt;&lt;br&gt;
+        &lt;strike&gt;글자의 중앙에 줄을 그어줍니다&lt;/strike&gt;&lt;br&gt;&lt;br&gt;
+        &lt;u&gt;글자에 밑줄을 표시합니다&lt;/u&gt;&lt;br&gt;&lt;br&gt;
+        HTML 적용 시  <pre><b><i>굵은 이탤릭체</i></b><br><br>
+                    <i><tt>이탤릭체 타이프체</tt></i><br><br>
+                    <small>글자를 한 단계 작게 표시합니다</small><br><br>
+                    <big>글자를 한 단계 크게 표시합니다</big><br><br>
+                    <strike>글자의 중앙에 줄을 그어줍니다</strike><br><br>
+                    <u>글자에 밑줄을 표시합니다</u><br><br></pre>
+        &lt;b&gt; 태그 : 글자를 굵게 표시
+        &lt;i&gt; 태그 : 이탤릭체
+        &lt;tt&gt; 태그 : 타이프체
+        &lt;small&gt; 태그 : 글자 크기를 현재보다 한단계 작게
+        &lt;big&gt; 태그 : 글자 크기를 현재보다 한단계 크게
+        &lt;strike&gt; 태그 : 글자 중앙에 줄 긋기
+        &lt;u&gt; 태그 : 밑줄 긋기
+
+      ③ 기본적인 예약문자 사용하기
+        & : &amp;amp &lt; : &amp;lt &gt; : &amp;gt" : &amp;quot
+        저작권© : &amp;copy 공백 : &amp;nbsp
+
+      2. 문단 모양 꾸미기
+      ① 제목꾸미기 &lt;h#&gt;
+        &lt;h1&gt;제목 표시(h1)&lt;/h1&gt;
+        &lt;h2&gt;제목 표시(h2)&lt;/h2&gt;
+        &lt;h3&gt;제목 표시(h3)&lt;/h3&gt;
+        &lt;h4&gt;제목 표시(h4)&lt;/h4&gt;
+        &lt;h5&gt;제목 표시(h5)&lt;/h5&gt;
+        &lt;h6&gt;제목 표시(h6)&lt;/h6&gt;
+        HTML 적용 시
+        <pre> 
+            <h1>    제목 표시(h1)</h1>
+            <h2>    제목 표시(h2)</h2>
+            <h3>    제목 표시(h3)</h3>
+            <h4>    제목 표시(h4)</h4>
+            <h5>    제목 표시(h5)</h5>
+            <h6>    제목 표시(h6)</h6>
+        </pre>
+        &lt;h1&gt; (가장큰 사이즈) 부터 &lt;h6&gt; (가장 작은 사이즈)까지 사용가능
+
+      ② 문단 정렬 속성 &lt;h# align=“”&gt;
+        &lt;h1&gt;제목 표시(h1)&lt;/h1&gt;
+        &lt;h2 align="center"&gt;제목 표시(h2)&lt;/h2&gt;
+        &lt;h3 align="right"&gt;제목 표시(h3)&lt;/h3&gt;
+        &lt;h4 align="left"&gt;제목 표시(h4)&lt;/h4&gt;
+        &lt;p align="center"&gt;두 번째&lt;/p&gt;
+        HTML 적용 시
+        <pre>
+        <h1>제목 표시(h1)</h1>
+        <h2 align="center">제목 표시(h2)</h2>
+        <h3 align="right">제목 표시(h3)</h3>
+        <h4 align="left">제목 표시(h4)</h4>
+        <p align="center">두 번째</p>
+        </pre>
+        문단 정렬 기본은 왼쪽 정렬
+        left : 왼쪽 정렬(기본값)
+        center : 가운데 정렬
+        right : 오른쪽 정렬
+        align 속성 사용시 &lt;p&gt;와 &lt;/p&gt;를 쌍으로 사용
+
+      ③ 줄바꾸기 : &lt;br&gt;
+
+      ④ 문단구분 : &lt;p&gt;
+        &lt;p&gt; &lt;/p&gt; 태그
+        &lt;br&gt; 태그는 반복 효과 가능하지만 &lt;p&gt; 태그는 반복 효과 없다. &lt;br&gt; 태그 두 번이 &lt;p&gt; 태그 한번 효과를 나타낸다. 
+
+      ⑤ 문단 가운데 정렬 &lt;center&gt;&lt;/center&gt;
+
+      ⑥ 수평선 삽입
+        &lt;hr align="left" width="90%" size="5" color="black" noshade&gt;
+        HTML 적용 시
+        <pre><hr align="left" width="90%" size="20" color="black" noshade></pre>
+        &lt;hr&gt; 태그의 속성
+        align(left,center,rigth) : 수평선의 위치 지정
+        width : 수평선의 넓이 지정(% 또는 픽셀로 설정)
+        size : 수평선의 높이를 픽셀로 설정
+        color : 수평선의 색상 지정
+        noshade : 그림자 없는 평면적인 수평선 지정
+        예 &lt;hr align="center" width="50%" size="2" color="red" noshade&gt;
+
+      3. 문서를 일정한 모양으로 보여주는 태그
+      ① &lt;pre&gt; &lt;/pre&gt; 태그
+        &lt;pre&gt;
+        웹프로그래밍은 어렵지 않아요. 잘 따라오세요.&lt;/pre&gt;
+        HTML 적용 시
+        <pre>
+          웹프로그래밍은 어렵지 않아요. 잘 따라오세요.</pre>
+        &lt;pre&gt; 태그는 미리 설정된 모양대로 브라우저에 출력
+        &lt;pre&gt; 태그 내에서도 다른 태그들은 본래의 기능을 수행
+        &lt;pre&gt; 태그 텍스트는 동일한 너비의 글꼴로 출력
+
+      ② &lt;pre&gt; 태그를 이용한 코드 출력
+        예약 문자를 사용한 HTML
+        &lt;pre&gt;
+        &lt;html&gt;
+        &lt;head&gt;
+        &lt;title&gt;HTML 문서의 기본 형태&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+        이곳에 본문 내용을 입력합니다. &lt;/body&gt;
+        &lt;/html&gt;
+        &lt;/pre&gt;
+
+        예약 문자를 사용하지않고 HTML 적용 시
+        <pre>
+          <html>
+          <head>
+          <title>HTML 문서의 기본 형태</title>
+          </head>
+          <body>
+          이곳에 본문 내용을 입력합니다. </body>
+          </html>
+          </pre>
+        태그 삽입시 예약문자를 사용해야 태그를 온전히 표현할 수 있음
+        
+
+
+      ③ &lt;ol&gt; 태그 : 숫자 목록(기본)
+        &lt;ol&gt;
+        &lt;li&gt;A+&lt;/li&gt;
+        &lt;li&gt;A0&lt;/li&gt;
+        &lt;li&gt;B+&lt;/li&gt;
+        &lt;/ol&gt;
+        HTML 적용 시
+        <pre><ol>
+          <li>A+</li>
+          <li>A0</li>
+          <li>B+</li>
+          </ol></pre>
+        숫자 목록으로 각 항목 앞에 순서대로 번호 표시
+        &lt;ol&gt; 목록의 시작과 종료 표시
+        &lt;li&gt; 각각의 항목
+
+      ④ &lt;ol&gt; 태그의 목록 형식 바꾸기
+        &lt;ol type="A"&gt;
+        &lt;li&gt;A+&lt;/li&gt;
+        &lt;li&gt;A0&lt;/li&gt;
+        &lt;li&gt;B+&lt;/li&gt;
+        &lt;/ol&gt;
+        HTML 적용 시
+        <pre><ol type="A">
+          <li>A+</li>
+          <li>A0</li>
+          <li>B+</li>
+          </ol></pre>
+        &lt;ol type="1"&gt; 아라비아 숫자로 목록 출력(기본값)
+        &lt;ol type="A"&gt; 알파벳 대문자로 목록 출력
+        &lt;ol type='a"&gt; 알파벳 소문자로 목록 출력
+        &lt;ol type="I"&gt; 로마자 대문자로 목록 출력
+        &lt;ol type="i"&gt; 로마자 소문자로 목록 출력
+        &lt;ol type='a' start="5"&gt; 시작번호 변경 즉, e부터 시작
+
+      ⑤ &lt;ul&gt; 태그: 점 목록(기본)
+        &lt;ul&gt;
+        &lt;li&gt;A+&lt;/li&gt;
+        &lt;li&gt;A0&lt;/li&gt;
+        &lt;li&gt;B+&lt;/li&gt;
+        &lt;/ul&gt;
+        HTML 적용 시
+        <pre><ul>
+          <li>A+</li>
+          <li>A0</li>
+          <li>B+</li>
+          </ul></pre>
+
+      ⑥ &lt;ul&gt; 태그의 목록 형식 바꾸기
+        &lt;ul type="circle"&gt;
+        &lt;li&gt;A+&lt;/li&gt;
+        &lt;li&gt;A0&lt;/li&gt;
+        &lt;li&gt;B+&lt;/li&gt;
+        &lt;/ul&gt;
+        HTML 적용 시
+        <pre><ul type="circle">
+          <li>A+</li>
+          <li>A0</li>
+          <li>B+</li>
+          </ul></pre>
+        목록 형식 바꾸기
+        &lt;ul type="circle"&gt; 동그란 흰색 점으로 목록 출력
+        &lt;ul type="disc"&gt; 동그란 검은색 점으로 목록 출력(기본값)
+        &lt;ul type='square"&gt; 정사각형 검은색 점으로 목록 출력
+
+      ⑦ 목록 중첩 정렬
+        &lt;ol type="A"&gt;
+        &lt;li&gt;하나&lt;/li&gt;
+        &lt;ol type="a"&gt;
+        &lt;li&gt;셋&lt;/li&gt;
+        &lt;li&gt;넷&lt;/li&gt;
+        &lt;/ol&gt;
+        &lt;li&gt;둘&lt;/li&gt;
+        &lt;/ol&gt; 
+        HTML 적용 시
+        <pre><ol type="A">
+          <li>하나</li>
+          <ol type="a">
+          <li>셋</li>
+          <li>넷</li>
+          </ol>
+          <li>둘</li>
+          </ol>
+        </pre>
+
+  </div>
+  <hr>
+
+  </div>
+
+  <!-- Pagination -->
+  <div class="m-center m-padding-32">
+    <div class="m-bar">
+      <a href="WHAT_HTML.html" class="m-bar-item m-button m-hover-black">&laquo;</a>
+      <a href="WHAT_HTML.html" class="m-bar-item  m-button m-hover-black">1</a>
+      <a href="BASIC_TAG.html" class="m-bar-item m-black m-button">2</a>
+      <a href="MEDIA_TAG.html" class="m-bar-item m-button m-hover-black">3</a>
+      <a href="TABLE_TAG.html" class="m-bar-item m-button m-hover-black">4</a>
+      <a href="FRAME_TAG.html" class="m-bar-item m-button m-hover-black">5</a>
+      <a href="STYLE_SHEET.html" class="m-bar-item m-button m-hover-black">6</a>
+      <a href="WHAT_META.html" class="m-bar-item m-button m-hover-black">7</a>
+      <a href="WHAT_META.html" class="m-bar-item m-button m-hover-black">&raquo;</a>
+    </div>
+  </div>
+
+
+  <a class="m-large fontj" style="display:scroll;position:fixed;bottom:30px;right:10px;" rel="nofollow"
+  href="#" title="Back to Top" style="m-large fontj">위로↑</a>
+  <br>
+  <br>
+  <a class="m-large fontj" style="display:scroll;position:fixed;bottom:10px;right:10px;" rel="nofollow"
+  href="#scrollbottom" title="Go to Bottom" >아래↓</a>
+
+  <div id="scrollbottom"></div>
+</body>
+</html>

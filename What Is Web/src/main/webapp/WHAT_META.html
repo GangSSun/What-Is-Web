@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html>
+<title>What Is Web?</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="mcss.css">
+<link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/jejugothic.css?family=JejuGothic">
+<link href="https://fonts.googleapis.com/css?family=Jua:400" rel="stylesheet">
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "JejuGothic", sans-serif}
+
+@font-face{
+  font-family: 'Jua';
+  src:url(Jua-Regular.eot);
+  src:url(Jua-Regular.eot?#iefix) format('embedded-opentype'),
+  url(Jua-Regular.woff) format('woff'),
+  url(Jua-Regular.ttf) format('truetype');
+src:local(※), url(Jua-Regular.woff) format('woff'); }
+.fontj {font-family:"Jua", sans-serif;}
+
+.m-bar-block .m-bar-item {padding:20px}
+.navcenter{
+  margin: auto;
+  padding: 0;
+  background-color:none;
+  position:absolute;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+.navmenu{
+  padding : 0px 10px 0px 10px;
+  font-size : 15px;
+  text-decoration : none;
+  text-align : center;
+  border-right : 1px solid rgb(180,180,180);
+}
+.navmenu:hover{
+  background-color: none;
+  font-weight: bold;
+}
+.active{
+  font-weight: bold;
+}
+.last{
+  border-right : none;
+}
+
+</style>
+<body>
+
+  <!-- Top menu -->
+  <!-- 제목 -->
+  <div class="m-top m-white">
+    <h1 class="m-large m-display-topright fontj" style="text-align:right; margin:0px 20px 0px 0px; color:rgba(89,89,89,1)"><b>CSE<br>Kang_Sun</b></h1>
+    <br>
+    <br>
+    <div>
+      <div class="m-large navcenter fontj">
+        <a href="WEB.html" class="navmenu m-xslarge">Web?</a>
+        <a href="HTML.html" class="navmenu m-xslarge">HTML!</a>
+        <a href="CSS.html" class="navmenu m-xslarge">CSS?</a>
+        <a href="JAVA_SCRIPT.html" class="navmenu m-xslarge">JAVA SCRIPT!</a>
+        <a href="JSP.html" class="navmenu last m-xslarge">JSP?</a>
+      </div>
+    </div>
+    <br>
+    <br>
+  </div>
+
+  <!-- 로고 -->
+  <div class="m-top">
+    <div class="m-xlarge" style="position:fixed; top:-20px; left:200px; max-width:1200px;margin:auto">
+      <a href="main.html" class="m-padding-16 m-left" onclick="function1()">
+      <img src="Image/Logo/logo_no.png" alt="logo" style="width:250px;height:200px;border:0"></a> <!--로고-->
+    </div>
+  </div>
+
+  
+
+  <!-- !PAGE CONTENT! -->
+  <div class="m-main m-content m-center m-padding" style="max-width:1100px;margin-top:100px">
+    <div class="m-row-padding m-padding-16 m-left-align " >
+    <pre><h3 class="fontj">
+    <pre><h1>meta</h1></pre>
+    &lt;meta&gt; 태그는 해당 문서에 대한 정보인 메타데이터(metadata)를 정의할 때 사용한다.
+
+    &lt;meta&gt; 요소는 &lt;base&gt;, &lt;link&gt;, &lt;script&gt;, &lt;style&gt;, &lt;title&gt; 요소와 같은 
+    다른 메타데이터 관련 요소들이 나타낼 수 없는 다양한 종류의 메타데이터를 제공할 때 사용되며, 
+    이렇게 제공된 정보는 브라우저나 검색 엔진, 다른 웹 서비스에서 사용하게 된다.
+    이러한 &lt;meta&gt; 요소는 언제나 &lt;head&gt; 요소 내부에 위치해야 한다.
+    만약 name 속성이나 http-equiv 속성이 명시되었다면 반드시 content 속성도 함께 명시되어야 하며, 
+    반대로 두 속성이 명시되지 않았다면 content 속성 또한 명시될 수 없다.
+    
+    [예시]
+    검색엔진
+    &lt;meta name="Keywords" content="web, html, jsp" /&gt;
+    문자코드 설정
+    &lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8" /&gt;
+    바뀐 주소로 자동 이동
+    &lt;meta http-equiv="refresh" content="5;url=http://naver.com"&gt;
+    &lt;meta&gt; 태그는 닫을 필요 없다. &lt;head&gt;와 &lt;/head&gt; 사이에 위치
+    http-equiv="항목명" 웹 브라우저가 서버에 명령을 내리는 속성
+    content="정보값" meta 정보의 내용을 지정한다. name="정보 이름" meta 정보의 내용을 지정한다. 
+    charset="인코딩 언어" 페이지의 문자 인코딩을 선언한다. 값으로는 utf-8 이 들어간다.
+
+    </h3></pre>
+  </div>
+  <hr>
+
+  </div>
+
+  <!-- Pagination -->
+  <div class="m-center m-padding-32">
+    <div class="m-bar">
+      <a href="WHAT_HTML.html" class="m-bar-item m-button m-hover-black">&laquo;</a>
+      <a href="WHAT_HTML.html" class="m-bar-item  m-button m-hover-black">1</a>
+      <a href="BASIC_TAG.html" class="m-bar-item m-button m-hover-black">2</a>
+      <a href="MEDIA_TAG.html" class="m-bar-item m-button m-hover-black">3</a>
+      <a href="TABLE_TAG.html" class="m-bar-item m-button m-hover-black">4</a>
+      <a href="FRAME_TAG.html" class="m-bar-item m-button m-hover-black">5</a>
+      <a href="STYLE_SHEET.html" class="m-bar-item m-button m-hover-black">6</a>
+      <a href="WHAT_META.html" class="m-bar-item m-black m-button">7</a>
+      <a href="WHAT_META.html" class="m-bar-item m-button m-hover-black">&raquo;</a>
+    </div>
+  </div>
+
+
+
+
+
+</body>
+</html>

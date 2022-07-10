@@ -1,0 +1,588 @@
+
+
+<!DOCTYPE html>
+<html>
+<title>What Is Web?</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="mcss.css">
+<link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/jejugothic.css?family=JejuGothic">
+<link href="https://fonts.googleapis.com/css?family=Jua:400" rel="stylesheet">
+
+<style>
+body,h1,h2,h3,h4,h5,h6{font-family: "JejuGothic", sans-serif}
+
+@font-face{
+  font-family: 'Jua';
+  src:url(Jua-Regular.eot);
+  src:url(Jua-Regular.eot?#iefix) format('embedded-opentype'),
+  url(Jua-Regular.woff) format('woff'),
+  url(Jua-Regular.ttf) format('truetype');
+src:local(※), url(Jua-Regular.woff) format('woff'); }
+.fontj{font-family:"Jua", sans-serif;}
+
+.m-bar-block .m-bar-item{padding:20px}
+.navcenter{
+  margin: auto;
+  padding: 0;
+  background-color:none;
+  position:absolute;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+.navmenu{
+  padding : 0px 10px 0px 10px;
+  font-size : 15px;
+  text-decoration : none;
+  text-align : center;
+  border-right : 1px solid rgb(180,180,180);
+}
+.navmenu:hover{
+  background-color: none;
+  font-weight: bold;
+}
+.active{
+  font-weight: bold;
+}
+.last{
+  border-right : none;
+}
+
+</style>
+<body>
+
+  <!-- Top menu -->
+  <!-- 제목 -->
+  <div class="m-top m-white">
+    <h1 class="m-large m-display-topright fontj" style="text-align:right; margin:0px 20px 0px 0px; color:rgba(89,89,89,1)"><b>CSE<br>Kang_Sun</b></h1>
+    <br>
+    <br>
+    <div>
+      <div class="m-large navcenter fontj">
+        <a href="WEB.html" class="navmenu m-xslarge">Web?</a>
+        <a href="HTML.html" class="navmenu m-xslarge">HTML!</a>
+        <a href="CSS.html" class="navmenu m-xslarge">CSS?</a>
+        <a href="JAVA_SCRIPT.html" class="navmenu m-xslarge">JAVA SCRIPT!</a>
+        <a href="JSP.html" class="navmenu last m-xslarge">JSP?</a>
+      </div>
+    </div>
+    <br>
+    <br>
+  </div>
+
+  <!-- 로고 -->
+  <div class="m-top">
+    <div class="m-xlarge" style="position:fixed; top:-20px; left:200px; max-width:1200px;margin:auto">
+      <a href="main.html" class="m-padding-16 m-left" >
+      <img src="Image/Logo/logo_no.png" alt="logo" class="logosize"></a> <!--로고-->
+    </div>
+  </div>
+
+  
+
+<!-- !PAGE CONTENT! -->
+<div class="m-main m-content m-center m-padding" style="max-width:1100px;margin-top:100px">
+  
+  <br>
+  <br>
+  <br>
+  <br>
+  <div>
+    <div class="navcenter">
+      <a href="JAVA_SCRIPT.html" class="navmenu ">JAVA SCRIPT?</a>
+      <a href="JAVA_SCRIPT_2.html" class="navmenu active last">JAVA SCRIPT 사용 예시</a>
+    </div>
+  </div>
+  <hr>
+  <!-- First Photo Grid-->
+  <div class="m-row-padding m-padding-16 m-left-align" >
+    <pre><h3 class="fontj">
+      [자바 스크립트]
+        ① 문서 내에 자바스크립트 넣기 1 : if문 사용 
+        &lt;!DOCTYPE html&gt;
+          &lt;head&gt;
+          &lt;meta charset = "UTF-8"&gt;
+          &lt;title&gt;자바스크립트 &lt;/title&gt;
+          &lt;style type="text/css "&gt;
+              body{width : 820 px;}
+              div{display : block;width : 800 px;margin : 4 px;padding : 4 px;background - color : #EBF5FF;text - align : center;}
+              div.a{height : 40 px;}
+              div.b{height : 30 px;}
+              div.c{float : left;width : 600 px;height : 600 px;}
+              div.d{width : 584 px;background - color : #78A9ED;}
+              div.e{float : left;width : 184 px;height : 600 px;}
+              div.f{overflow : hidden;height : 40 px;}
+              div.g{float : left;width : 150 px;text - align : left;}
+              a{text - decoration - line : none;color : inherit;} 
+          &lt;/style&gt;
+          &lt;/head&gt;
+          &lt;body&gt;
+          &lt;div class = "a"&gt;
+          header &lt;/div&gt;
+          &lt;div class="b"&gt;nav&lt;/div&gt;
+          &lt;div class = "c"&gt;
+          section &lt;div class = "d"&gt;
+          article &lt;/div&gt;&lt;br&gt;&lt;br&gt;
+          &lt;script&gt;
+            var a,b;
+            a=5,b=10;
+            document.write("a=5, b=10일 때 a&gt;b는 ");
+            if(a&gt;b)
+            {   
+              document.write("참");
+            }
+            else
+            {
+              document.write("거짓");
+            }
+          &lt;/script&gt;
+          &lt;/div&gt;
+          &lt;div class="e"&gt;
+          aside
+            &lt;div class="g"&gt;
+              &lt;ul type="square"&gt;
+                &lt;li&gt;&lt;a href="if01.html"&gt;if문 1&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;&lt;a href="if02.html"&gt;if문 2&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;&lt;a href="bmi01.html"&gt;BMI 계산기 1&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;&lt;a href="bmi02.html"&gt;BMI 계산기 2&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;&lt;a href="map02.html"&gt;카카오맵&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;&lt;a href="index.html"&gt;홈으로&lt;/a&gt;
+                &lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class = "f"&gt;
+          footer &lt;/div&gt;
+          &lt;/body&gt;
+          &lt;/html&gt;
+
+          <a href='JS_1.html'    target='_blank' class="m-text-red"> if문 사용 예시 보기[클릭]</a>
+
+          자바스크립트
+          &lt;script&gt;&lt;/script&gt;
+          태그를 사용
+          document 객체의 주요 메소드
+          open() : 콘텐츠를 모두 지우고 새로운 HTMl 콘텐츠를 쓸 수 있도록 열기
+          write(),
+          writeln() : document 객체에 담긴 내용의 끝에 HTML 텍스트를 추가
+          close() : document 객체에 있는 HTML 콘텐츠를 브라우저에 출력하고, 더 이상 쓰기 없음
+
+        ② 문서 내에 자바스크립트 넣기 2 : if문과 입력창 사용 
+        &lt;!DOCTYPE html&gt;
+          &lt;head&gt;
+          &lt;meta charset = "UTF-8"&gt;
+          &lt;title&gt;
+          자바스크립트 &lt;/title&gt;
+          &lt;style type="text/css "&gt;
+              body{width : 820 px;}
+              div{display : block;width : 800 px;margin : 4 px;padding : 4 px;background - color : #EBF5FF;text - align : center;}
+              div.a{height : 40 px;}
+              div.b{height : 30 px;}
+              div.c{float : left;width : 600 px;height : 600 px;}
+              div.d{width : 584 px;background - color : #78A9ED;}
+              div.e{float : left;width : 184 px;height : 600 px;}
+              div.f{overflow : hidden;height : 40 px;}
+              div.g{float : left;width : 150 px;text - align : left;}
+              a{text - decoration - line : none;color : inherit;} 
+            &lt;/style&gt;
+          &lt;/head&gt;
+          &lt;body&gt;
+          &lt;div class = "a"&gt;
+          header &lt;/div&gt;
+          &lt;div class="b"&gt;nav&lt;/div&gt;
+          &lt;div class = "c"&gt;
+          section &lt;
+            div class = "d"&gt;article &lt;/div&gt;&lt;br&gt;&lt;br&gt;
+          &lt;script&gt;
+            var a,b;
+            a=parseInt(prompt("a : "));
+            b=parseInt(prompt("b : "));
+            if(a&gt;b)
+            {
+              document.write("a : "+a+" "+"b : "+b+"일 때 a는 b보다 크다.");
+            }
+            else
+            {
+              document.write("a : "+a+" "+"b : "+b+"일 때 a는 b보다 작거나 같다.");
+            }
+          &lt;/script&gt;
+          &lt;/div&gt;
+          &lt;div class="e"&gt;
+          aside
+            &lt;div class="g"&gt;
+              &lt;ul type="square"&gt;
+                &lt;li&gt;&lt;a href="if01.html"&gt;if문 1&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="if02.html"&gt;if문 2&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="bmi01.html"&gt;BMI 계산기 1&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="bmi02.html"&gt;BMI 계산기 2&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="map02.html"&gt;카카오맵&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="index.html"&gt;홈으로&lt;/a&gt;&lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class = "f"&gt;
+          footer &lt;/div&gt;
+          &lt;/body&gt;
+          &lt;/html&gt;
+
+          <a href='JS_2.html'    target='_blank' class="m-text-red"> if문과 입력창 실행 결과 보기[클릭]</a>
+
+
+          prompt() 함수 : String prompt([String message], [String defaultValue])
+          문자열을 입력할 때 사용
+          첫 번째 매개변수는 입력 창에 출력되는 메시지
+          두 번째 매개변수는 입력 창의 기본 값
+          자바스크립트 주석 : // 한줄주석, / * ~ * / 여러줄 주석
+          자바스크립트 형변환 :
+          var 변수 = parseInt(문자); 문자를 정수형로 변환
+          var 변수 = parseFloat(문자); 문자를 실수형으로 변환
+          var 변수 = Nember(문자); 문자를 정수&실수형으로 변환
+          var 변수 = String(숫자); 숫자를 문자로 변환
+          var 변수 = 숫자.toString(진법); 숫자를 문자로 변환
+          var 변수 = 숫자.toFixed(소수자리수); 숫자를 문자로 변환, 실수형의 소수점 자리를 지정가능
+          var 변수 = 숫자 + "문자열"; 숫자와 문자열을 한 문자열로 더해줌
+
+        ③ html 문서에서 자바스크립트 불러오기 1 : bmi 계산
+          &lt;!DOCTYPE html&gt;
+          &lt;head&gt;
+          &lt;meta charset="UTF-8"&gt;
+          &lt;title&gt;자바스크립트&lt;/title&gt;
+          &lt;style type = "text/css"&gt;
+              body{width : 820 px;}
+              div{display : block;width : 800 px;margin : 4 px;padding : 4 px;background - color : #EBF5FF;text - align : center;}
+              div.a{height : 40 px;}
+              div.b{height : 30 px;}
+              div.c{float : left;width : 600 px;height : 600 px;}
+              div.d{width : 584 px;background - color : #78A9ED;}
+              div.e{float : left;width : 184 px;height : 600 px;}
+              div.f{overflow : hidden;height : 40 px;}
+              div.g{float : left;width : 150 px;text - align : left;}
+              a{text - decoration - line : none;color : inherit;} 
+          &lt;/style&gt;
+          &lt;/head&gt;
+          &lt;body&gt;
+            &lt;div class = "a"&gt;
+            header &lt;/div&gt;
+            &lt;div class="b"&gt;nav&lt;/div&gt;
+            &lt;div class = "c"&gt;
+            section &lt;
+            div class = "d"&gt;article &lt;/div&gt;&lt;br&gt;&lt;br&gt;
+            &lt;table align="left" border="1" bordercolor="#78A9ED" width="300" height="200"
+            cellpadding="0" cellspacing="0"&gt;
+              &lt;caption align="top"&gt;Fig. 1. 한국인의 BMI 표&lt;/caption&gt;
+              &lt;tr&gt;&lt;th&gt;BMI &lt;/th&gt;&lt;th&gt;상태&lt;/th&gt;&lt;/tr&gt;
+              &lt;tr&gt;&lt;td&gt;35.0 이상&lt;/td&gt;&lt;td&gt;고도비만 &lt;/td&gt;&lt;/tr&gt;
+              &lt;tr&gt;&lt;td&gt;25 - 34.9 &lt;/td&gt;&lt;td&gt;비만&lt;/td&gt;&lt;/tr&gt;
+              &lt;tr&gt;&lt;td&gt;23 - 24.9&lt;/td&gt;&lt;td&gt;과체중 &lt;/td&gt;&lt;/tr&gt;
+              &lt;tr&gt;&lt;td&gt;18.5 - 22.9 &lt;/td&gt;&lt;td&gt;정상&lt;/td&gt;&lt;/tr&gt;            
+              &lt;tr&gt;&lt;td&gt;18.5 미만&lt;/td&gt;&lt;td&gt;저체중 &lt;/td&gt;&lt;/tr&gt;
+              &lt;tr&gt;&lt;td colspan = "2"&gt;&lt;b&gt;BMI = 체중(kg) / 키(m) * 키(m) &lt;/td&gt;&lt;/tr&gt;
+            &lt;/table&gt;&lt;br&gt;&lt;br&gt;
+            &lt;script type="text/javascript " src=" bmi.js "&gt;&lt;/script&gt;
+
+            &lt;/div&gt;
+            &lt;div class="e"&gt;
+            aside
+              &lt;div class="g"&gt;
+                &lt;ul type="square"&gt;
+                  &lt;li&gt;&lt;a href="if01.html"&gt;if문 1&lt;/a&gt;&lt;/li&gt;
+                  &lt;li&gt;&lt;a href="if02.html"&gt;if문 2&lt;/a&gt;&lt;/li&gt;
+                  &lt;li&gt;&lt;a href="bmi01.html"&gt;BMI 계산기 1&lt;/a&gt;&lt;/li&gt;
+                  &lt;li&gt;&lt;a href="bmi02.html"&gt;BMI 계산기 2&lt;/a&gt;&lt;/li&gt;
+                  &lt;li&gt;&lt;a href="map02.html"&gt;카카오맵&lt;/a&gt;&lt;/li&gt;
+                  &lt;li&gt;&lt;a href="index.html"&gt;홈으로&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class = "f"&gt;
+            footer &lt;/div&gt;
+          &lt;/body&gt;
+          &lt;/html&gt;
+
+          bmi.js 파일
+          var a,b,bmi;
+          a=prompt("체중(kg) : ");
+          b=prompt("키(m) : ");
+          bmi=a/(b * b);
+          if (bmi&gt;=30.0){
+              document.write("비만입니다.");
+          } else if ((bmi&gt;=25.0) && (bmi &lt;30.0)){
+              document.write("과체중입니다.");
+          } else if ((bmi&gt;18.5) && (bmi &lt;25.0)){
+              document.write("정상입니다.");
+          } else{
+              document.write("저체중입니다.");
+          }
+          
+          <a href='JS_3.html'    target='_blank' class="m-text-red"> bmi 계산 실행 결과 보기[클릭]</a>
+
+
+        ④ html 문서에서 자바스크립트 불러오기 2 : bmi 계산 
+        &lt;!DOCTYPE html&gt;
+          &lt;head&gt;
+          &lt;meta charset = "UTF-8"&gt;
+          &lt;title&gt;
+          자바스크립트 &lt;/title&gt;
+          &lt;style type="text/css "&gt;
+              body{width : 820 px;}
+              div{display : block;margin : 4 px;padding : 4 px;background - color : #EBF5FF;text - align : center;}
+              div.a{height : 40 px;}
+              div.b{height : 30 px;}
+              div.c{float : left;width : 600 px;height : 600 px;}
+              div.d{width : 584 px;background - color : #78A9ED;}
+              div.e{float : left;width : 188 px;height : 600 px;}
+              div.f{overflow : hidden;height : 40 px;}
+              div.g{float : left;width : 150 px;text - align : left;}
+              a{text - decoration - line : none;color : inherit;}
+            &lt;/style&gt;
+          &lt;/head&gt;
+          &lt;body&gt;
+                &lt;div class = "a"&gt;
+                header &lt;/div&gt;
+                &lt;div class="b"&gt;nav&lt;/div&gt;
+                &lt;div class = "c"&gt;
+                section 
+                &lt;div class = "d"&gt;article &lt;/div&gt;&lt;br&gt;&lt;br&gt;
+                &lt;table align="left" border="1" bordercolor="#78A9ED" width="300" height="200“cellpadding="0" cellspacing="0"&gt;
+                    &lt;caption align="top"&gt;Fig. 1. 한국인의 BMI 표&lt;/caption&gt;
+                    &lt;tr&gt;&lt;th&gt;BMI &lt;/th&gt;&lt;th&gt;상태&lt;/th&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td&gt;35.0 이상&lt;/td&gt;&lt;td&gt;고도비만 &lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td&gt;25 - 34.9 &lt;/td&gt;&lt;td&gt;비만&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td&gt;23 - 24.9&lt;/td&gt;&lt;td&gt;과체중 &lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td&gt;18.5 - 22.9 &lt;/td&gt;&lt;td&gt;정상&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td&gt;18.5 미만&lt;/td&gt;&lt;td&gt;저체중 &lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td colspan = "2"&gt;&lt;b&gt;BMI = 체중(kg) / 키(m) * 키(m) &lt;/td&gt;&lt;/tr&gt;
+                &lt;/table&gt;&lt;br&gt;&lt;br&gt;
+                &lt;form method="post" name="box"&gt;
+                    &lt;input type="number" name="data_kg" id="kg" placeholder="체중(kg) : "&gt;
+                    &lt;br&gt;&lt;br&gt;
+                    &lt;input type="number" name="data_m" id="m" placeholder="키(m) : "&gt;
+                    &lt;br&gt;&lt;br&gt;
+                    &lt;input type="text" name="output" id="result" " placeholder="계산결과 : "
+                    value=""&gt; &lt;br&gt;&lt;br&gt;
+                    &lt;input type="button" value="결과"' onclick="button_click();"&gt;&lt;br&gt;&lt;br&gt;
+                &lt;/form&gt;
+                &lt;script type = "text/javascript" src = "bmi01.js"&gt;
+                &lt;/script&gt;
+                &lt;/div&gt;
+                  &lt;div class = "e"&gt;
+                  aside &lt;
+                    div class = "g"&gt;
+                      &lt;ul type = "square"&gt;
+                        &lt;li&gt;&lt;a href = "if01.html"&gt;if문 1 &lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href = "if02.html"&gt;if문 2 &lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href = "bmi01.html"&gt;BMI 계산기 1 &lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href = "bmi02.html"&gt;BMI 계산기 2 &lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href = "map02.html"&gt;카카오맵 &lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href = "index.html"&gt;홈으로 &lt;/a&gt;&lt;/li&gt;
+                      &lt;/ul&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;div class="f"&gt;footer&lt;/div&gt;
+                &lt;/body&gt;
+          &lt;/html&gt;
+
+
+          &lt;form&gt;&lt;/form&gt;태그를 이용하여 입력 양식 선언
+          &lt;form method="post" name="box"&gt;
+          method=“post” 폼을 기반으로 데이터 전송방식, 데이터의 길이에 제한 없음
+          name : 입력 양식의 이름
+          &lt;input type="number" name="data_kg" id="kg" placeholder="체중(kg) : "&gt;
+          type="number" : 숫자 값을 포함해야 하는 입력필드에 사용
+          name="data_kg" : 입력 양식의 이름
+          id="kg" : 입력 양식의 id
+          placeholder="체중(kg) : " : 입력 양식의 기본값
+
+
+          bmi01.js 파일
+          function button_click()
+         {
+          var a,b,bmi,r;
+          var a = document.getElementById('kg').value;
+          var b = document.getElementById('m').value;
+          bmi=a/(b * b);
+          if (bmi&gt;=30.0){
+              document.box.output.value = "비만입니다.";
+          } else if ((bmi&gt;=25.0) && (bmi &lt;30.0)){
+              document.box.output.value = "과체중입니다.";
+          } else if ((bmi&gt;18.5) && (bmi &lt;25.0)){
+              document.box.output.value = "정상입니다.";
+          } else{
+              document.box.output.value = "저체중입니다.";
+          }} 
+          
+
+          &lt;input type = "button" value = "결과" ' onclick="button_click();"&gt;
+          onclick = "button_click();" : 버튼이 눌러지면 자바스크립트의 button_click()함수 실행
+
+          <a href='JS_4.html'    target='_blank' class="m-text-red"> bmi 계산 2 실행 결과 보기[클릭]</a>
+
+
+        ⑤ Geolocation을 이용한 현재 위치(latitude : 위도, longitude : 경도)찾기
+          &lt;!DOCTYPE html&gt;
+          &lt;html&gt;
+          &lt;body&gt;
+            &lt;p&gt;Click the button to get your coordinates. &lt;/p&gt;
+            &lt;button onclick="getLocation()"&gt;Try It&lt;/button&gt;&lt;p id = "demo"&gt;&lt;/p&gt;
+            &lt;script type="text/javascript "&gt;
+            var x = document.getElementById("demo");
+
+            function getLocation (){
+              if (navigator.geolocation){
+                  navigator.geolocation.getCurrentPosition(showPosition);
+                  } 
+              else{
+                    x.innerHTML = "Geolocation is not supported by this browser.";
+                  }
+            }
+            function showPosition (position){
+              x.innerHTML = "Latitude: " + position.coords.latitude + "&lt;br&gt;Longitude: " + position.coords.longitude;
+            } 
+          &lt;/script&gt;
+          &lt;/body&gt;&lt;/html&gt;
+
+          <a href='JS_5.html'    target='_blank' class="m-text-red"> Geolocation을 이용한 현재위치 찾기 실행 결과 보기[클릭]</a>
+
+
+        ⑥ 카카오맵 API를 이용한 현재위치 지도에 표시
+          &lt;!-- https://developers.kakao.com/--&gt;
+          &lt;!-- https://apis.map.kakao.com/web/guide/--&gt; 카카오맵 API 사용 방법 
+          &lt;!DOCTYPE html&gt;
+          &lt;html&gt;
+          &lt;head&gt;
+          &lt;meta charset = "utf-8"&gt;
+          &lt;title&gt;마커 생성하기 &lt;/title&gt;
+          &lt;/head&gt;&lt;body&gt;&lt;div id = "map" style = "width:100%;height:350px;"&gt;&lt;/div&gt;
+          &lt;script type="text/javascript " src="//dapi.kakao.com/v2/maps/sdk.js?appkey=발급받은 APP KEY를 사용하세요"&gt;&lt;/script&gt;
+            &lt;script&gt;
+              var mapContainer = document.getElementById('map'), // 지도를 표시할 div
+              mapOption ={
+                  center: new kakao.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표
+                  level: 3 // 지도의 확대 레벨
+              };
+              var map = new kakao.maps.Map(mapContainer, mapOption);// 지도를 생성합니다
+              
+              // 마커가 표시될 위치입니다
+              var markerPosition = new kakao.maps.LatLng(33.450701, 126.570667);
+
+              // 마커를 생성합니다
+              var marker = new kakao.maps.Marker({position: markerPosition});
+
+              // 마커가 지도 위에 표시되도록 설정합니다
+              marker.setMap(map);
+
+              // 아래 코드는 지도 위의 마커를 제거하는 코드입니다
+              // marker.setMap(null);
+            &lt;/script&gt;
+          &lt;/body&gt;&lt;/html&gt;
+
+          <a href='JS_6.html'    target='_blank' class="m-text-red"> 카카오맵 API를 이용한 현재위치 지도에 표시 실행 결과[클릭]</a>
+
+
+        ⑦ 최종 웹페이지
+          &lt;!DOCTYPE html&gt;
+          &lt;head&gt;
+          &lt;meta charset="UTF-8"&gt;
+          &lt;title&gt;자바스크립트&lt;/title&gt;&lt;style type = "text/css"&gt;
+                body{width : 820 px;}
+                div{display : block; margin : 4 px; padding : 4 px; text - align : center;}
+                div.a{height : 40 px;background - color : #EBF5FF;}
+                div.b{height : 30 px;                  background - color : #EBF5FF;}
+                div.c{float : left;width : 600 px;height : 800 px;background - color : #EBF5FF;text - align : center;}
+                div.d{width : 584 px;background - color : #78A9ED;}
+                div.e{float : left;width : 188 px;height : 800 px;background - color : #EBF5FF;}
+                div.f{overflow : hidden;height : 40 px;background - color : #EBF5FF;}
+                div.g{float : left;width : 150 px;text - align : left;background - color : #EBF5FF;}
+                a{text - decoration - line : none;color : inherit;} 
+          &lt;/style&gt;
+          &lt;/head&gt;
+          &lt;body&gt;
+          &lt;div class = "a"&gt;
+          header &lt;/div&gt;
+          &lt;div class="b"&gt;nav&lt;/div&gt;
+          &lt;div class = "c"&gt;
+          section 
+            &lt;div class = "d"&gt;article 
+                &lt;center&gt;
+                    &lt;p&gt;Click the button to get your coordinates. &lt;/p&gt;
+                    &lt;button onclick="getLocation()"&gt;Try It&lt;/button&gt;
+                    &lt;p id = "demo"&gt;&lt;/p&gt;
+                    
+                    &lt;div id="map" style="width:500px; height:400px;"&gt;&lt;/div&gt;
+                    &lt;script type = "text/javascript" src = "//dapi.kakao.com/v2/maps/sdk.js?appkey=발급받은 APP KEY를 사용하세요 "&gt;&lt;/script&gt;
+                    &lt;script type = "text/javascript" src = "map.js"&gt;
+                    &lt;/script&gt;
+                &lt;/center&gt;
+            &lt;/div&gt;&lt;br&gt;&lt;br&gt;
+          &lt;/div&gt;
+            &lt;div class = "e"&gt;
+            aside 
+              &lt;div class = "g"&gt;
+                  &lt;ul type = "square"&gt;
+                      &lt;li&gt;&lt;a href = "if01.html" title = "자바스크립트 if문 예제 1 입니다."&gt;if문 1 &lt;/a&gt;&lt;/li&gt;
+                      &lt;li&gt;&lt;a href = "if02.html" title = "자바스크립트 if문 예제 2 입니다."&gt;if문 2 &lt;/a&gt;&lt;/li&gt;
+                      &lt;li&gt;&lt;a href = "bmi01.html" title = "자바스크립트 BMI 예제 1 입니다."&gt;BMI 계산기 1 &lt;/a&gt;&lt;/li&gt;
+                      &lt;li&gt;&lt;a href = "bmi02.html" title = "자바스크립트 BMI 예제 2 입니다."&gt;BMI 계산기 2 &lt;/a&gt;&lt;/li&gt;
+                      &lt;li&gt;&lt;a href = "map02.html" title = "현재 위치를 화면에 나타냅니다,"&gt;카카오맵 &lt;/a&gt;&lt;/li&gt;
+                      &lt;li&gt;&lt;a href = "index.html" title = "홈으로 이동합니다."&gt;홈으로 &lt;/a&gt;&lt;/li&gt;
+                  &lt;/ul&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;div class="f"&gt;footer&lt;/div&gt;
+          &lt;/body&gt;
+          &lt;/html&gt;
+
+          map.js
+          var x = document.getElementById("demo");
+          function getLocation (){
+              if (navigator.geolocation){
+                  navigator.geolocation.getCurrentPosition(showPosition);
+              } else{
+                  x.innerHTML = "Geolocation is not supported by this browser.";
+              }
+          }
+          function showPosition (position){
+              x.innerHTML = "Latitude: " + position.coords.latitude + "&lt;br&gt;Longitude: " + position.coords.longitude;
+              var mapContainer = document.getElementById('map'), // 지도를 표시할 div    mapOption ={
+                      center: new kakao.maps.LatLng(position.coords.latitude, position.coords.longitude), // 지도의
+                      중심좌표 level: 3 // 지도의 확대 레벨
+                  };
+              var map = new kakao.maps.Map(mapContainer, mapOption);
+              // 지도를 생성합니다
+              // 마커가 표시될 위치입니다
+              var markerPosition = new kakao.maps.LatLng(position.coords.latitude, position.coords.longitude);
+              // 마커를 생성합니다
+              var marker = new kakao.maps.Marker({position: markerPosition});
+              // 마커가 지도 위에 표시되도록 설정합니다
+              marker.setMap(map);
+              // 아래 코드는 지도 위의 마커를 제거하는 코드입니다
+              // marker.setMap(null);
+          }
+
+          <a href='JS_7.html'    target='_blank' class="m-text-red"> 최종 웹페이지 실행 결과 보기[클릭]</a>
+
+
+
+    </h3></pre>
+  </div>
+  <hr>
+  
+
+
+
+
+  <a class="m-large fontj" style="display:scroll;position:fixed;bottom:30px;right:10px;" rel="nofollow"
+  href="#" title="Back to Top" style="m-large fontj">위로↑</a>
+  <br>
+  <br>
+  <a class="m-large fontj" style="display:scroll;position:fixed;bottom:10px;right:10px;" rel="nofollow"
+  href="#scrollbottom" title="Go to Bottom" >아래↓</a>
+
+  <div id="scrollbottom"></div>
+</body>
+</html>

@@ -1,0 +1,198 @@
+
+
+<!DOCTYPE html>
+<html>
+<title>What Is Web?</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="mcss.css">
+<link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/jejugothic.css?family=JejuGothic">
+<link href="https://fonts.googleapis.com/css?family=Jua:400" rel="stylesheet">
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "JejuGothic", sans-serif}
+
+@font-face{
+  font-family: 'Jua';
+  src:url(Jua-Regular.eot);
+  src:url(Jua-Regular.eot?#iefix) format('embedded-opentype'),
+  url(Jua-Regular.woff) format('woff'),
+  url(Jua-Regular.ttf) format('truetype');
+src:local(※), url(Jua-Regular.woff) format('woff'); }
+.fontj {font-family:"Jua", sans-serif;}
+
+.m-bar-block .m-bar-item {padding:20px}
+.navcenter{
+  margin: auto;
+  padding: 0;
+  background-color:none;
+  position:absolute;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+.navmenu{
+  padding : 0px 10px 0px 10px;
+  font-size : 15px;
+  text-decoration : none;
+  text-align : center;
+  border-right : 1px solid rgb(180,180,180);
+}
+.navmenu:hover{
+  background-color: none;
+  font-weight: bold;
+}
+.active{
+  font-weight: bold;
+}
+.last{
+  border-right : none;
+}
+
+</style>
+<body>
+
+  <!-- Top menu -->
+  <!-- 제목 -->
+  <div class="m-top m-white">
+    <h1 class="m-large m-display-topright fontj" style="text-align:right; margin:0px 20px 0px 0px; color:rgba(89,89,89,1)"><b>CSE<br>Kang_Sun</b></h1>
+    <br>
+    <br>
+    <div>
+      <div class="m-large navcenter fontj">
+        <a href="WEB.html" class="navmenu m-xslarge">Web?</a>
+        <a href="HTML.html" class="navmenu m-xslarge">HTML!</a>
+        <a href="CSS.html" class="navmenu m-xslarge">CSS?</a>
+        <a href="JAVA_SCRIPT.html" class="navmenu m-xslarge">JAVA SCRIPT!</a>
+        <a href="JSP.html" class="navmenu last m-xslarge">JSP?</a>
+      </div>
+    </div>
+    <br>
+    <br>
+  </div>
+
+  <!-- 로고 -->
+  <div class="m-top">
+    <div class="m-xlarge" style="position:fixed; top:-20px; left:200px; max-width:1200px;margin:auto">
+      <a href="main.html" class="m-padding-16 m-left" onclick="function1()">
+      <img src="Image/Logo/logo_no.png" alt="logo" style="width:250px;height:200px;border:0"></a> <!--로고-->
+    </div>
+  </div>
+
+  
+
+  <!-- !PAGE CONTENT! -->
+  <div class="m-main m-content m-center m-padding" style="max-width:1100px;margin-top:100px">
+    <div class="m-row-padding m-padding-16 m-left-align " >
+    <pre><h3 class="fontj">
+    1. 프레임 &lt;frameset&gt; &lt;frame&gt; &lt;/frameset&gt;
+      ① 프레임에 들어갈 문서 만들기
+        _hrader.html &lt;body bgcolor="#EBF5FF"&gt;header&lt;/body&gt;
+        _nav.html &lt;body bgcolor="#EBF5FF"&gt;&lt;a href="https://www.jbnu.ac.kr/kor"
+        target="main"&gt;nav&lt;/a&gt;&lt;/body&gt;
+        _section.html &lt;body bgcolor="#EBF5FF"&gt;section&lt;/body&gt;
+        _aside.html &lt;body bgcolor="#EBF5FF"&gt;aside&lt;/body&gt;
+        _footer.html &lt;body bgcolor="#EBF5FF"&gt;footer&lt;/body&gt;
+        a 태그의 target 속성 : 지정된 링크 문서
+        frame 태그의 name 속성 : 프레임의 이름(링크된 문서가 지정된 프레임에 표시)
+        _top : 해당 링크가 브라우저 전체에 표시
+        _blank : 새로운 창에 표시
+        _parent : 현재창의 부모창에 표시
+        _self : 현재 자신의 창에 표시
+      ② 세 프레임으로 나누어진 페이지
+        상 30%, 하 70%(좌 20%,우 80%)
+        &lt;frameset rows="10%, 80%,10%"&gt;
+        &lt;frame src="_header.html"&gt;
+        &lt;frameset cols="20%, 80%"&gt;
+        &lt;frame src="_section.html"&gt;
+        &lt;frame src="_aside.html"&gt;
+        &lt;/frameset&gt;
+        &lt;frame src="_footer.html"&gt;
+        &lt;/frameset&gt;
+        HTML 적용 시
+        <img src="Image/picture/Frame_1.PNG">
+        좌 20%, 우 80%(상 30%,하 70%)
+        &lt;frameset cols="20%, 80%"&gt;
+        &lt;frame src="_section.html"&gt;
+        &lt;frameset rows="10%, 90%"&gt;
+        &lt;frame src="_header.html"&gt;
+        &lt;frame src="_aside.html"&gt;
+        &lt;/frameset&gt;
+        &lt;/frameset&gt;
+        HTML 적용 시
+        <img src="Image/picture/Frame_2.PNG">
+      ③ header, nav, section, aside, footer로 나누어진 프레임 문서
+        &lt;frameset border="1" bordercolor="black" rows="10%, 5%, 75%, 10%"&gt;
+        &lt;frame src="_header.html"&gt;
+        &lt;frame src="_nav.html"&gt;
+        &lt;frameset cols="20%, 80%"&gt;
+        &lt;frame src="_section.html"&gt;
+        &lt;frame src="_aside.html" name="main" marginwidth="100"&gt;
+        &lt;/frameset&gt;
+        &lt;frame src="_footer.html" marginheight="30"&gt;
+        &lt;/frameset&gt;
+        HTML 적용 시
+        <img src="Image/picture/Frame_3.PNG">
+        frameset rows="10%, 5%, 75%, 10%" : 세로로 4개의 프레임으로 나눔
+          값 : 픽셀값 또는 %
+          기능 : 화면을 상하로 분할
+        frameset rows="70,50%,*" : 화면을 세 개로 분리 후 가장 위 70픽셀, 가운데50%, 나머지 맨 아래 할당
+        frameset cols="20%,80%" : 왼쪽 프레임에 20%, 오른쪽 프레임에 80%
+          값 : 픽셀값 또는 %
+          기능 : 화면을 좌우로 분할
+        frame src="보여줄 문서" : 각 프레임에 보여줄 문서 지정
+          값 : 문서의 위치
+          기능 : 해당 프레임에서 보여줄 문서의 위치 지정
+        border=“두께” : 경계선의 두께
+          값 : 픽셀
+          기능 : 프레임간 경계선의 두께 지정
+        bordercolor=“black” : 경계선 색
+          값 : RGB 코드 또는 색이름
+          기능 : 프레임 테두리 색 지정
+        name
+          값 : 프레임 이름
+          기능 : 해당 프레임의 이름 지정
+        frame src="화일위치" name="이름“ marginwidth
+          값 : 픽셀값 &gt; 1
+          기능 : 해당 프레임의 좌우 여백 지정
+        marginheight
+          값 : 픽셀값 &gt; 1
+          기능 : 해당 프레임의 상하 여백 설정
+        scrolling=”no“
+          값 : auto/yes/no
+          기능 : 프레임의 스크롤파 표시 지정
+        frame src="화일위치" scrolling="no“
+
+    </h3></pre>
+  </div>
+  <hr>
+
+  </div>
+
+  <!-- Pagination -->
+  <div class="m-center m-padding-32">
+    <div class="m-bar">
+      <a href="WHAT_HTML.html" class="m-bar-item m-button m-hover-black">&laquo;</a>
+      <a href="WHAT_HTML.html" class="m-bar-item  m-button m-hover-black">1</a>
+      <a href="BASIC_TAG.html" class="m-bar-item m-button m-hover-black">2</a>
+      <a href="MEDIA_TAG.html" class="m-bar-item m-button m-hover-black">3</a>
+      <a href="TABLE_TAG.html" class="m-bar-item m-button m-hover-black">4</a>
+      <a href="FRAME_TAG.html" class="m-bar-item m-black m-button ">5</a>
+      <a href="STYLE_SHEET.html" class="m-bar-item m-button m-hover-black">6</a>
+      <a href="WHAT_META.html" class="m-bar-item m-button m-hover-black">7</a>
+      <a href="WHAT_META.html" class="m-bar-item m-button m-hover-black">&raquo;</a>
+    </div>
+  </div>
+
+
+
+  <a class="m-large fontj" style="display:scroll;position:fixed;bottom:30px;right:10px;" rel="nofollow"
+href="#" title="Back to Top" style="m-large fontj">위로↑</a>
+  <br>
+  <br>
+  <a class="m-large fontj" style="display:scroll;position:fixed;bottom:10px;right:10px;" rel="nofollow"
+  href="#scrollbottom" title="Go to Bottom" >아래↓</a>
+
+  <div id="scrollbottom"></div>
+
+</body>
+</html>
